@@ -7,7 +7,7 @@ const Main = () => {
 	const [songIndex, setSongIndex] = useState(0);
 
 	useEffect(() => {
-		fetch("https://51.195.60.169:1515")
+		fetch("https://node.horizen.co.il:1515/")
 		.then(response => response.json())
 		.then(data => {
 			setBillboardData(data);
