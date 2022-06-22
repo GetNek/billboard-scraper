@@ -7,7 +7,7 @@ const Main = () => {
 	const [songIndex, setSongIndex] = useState(0);
 
 	useEffect(() => {
-		fetch("http://localhost:1515/")
+		fetch("http://51.195.60.169:1515")
 		.then(response => response.json())
 		.then(data => {
 			setBillboardData(data);
